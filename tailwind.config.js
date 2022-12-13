@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        'brand-color': '#5d3ebc' 
+        'brand-color': '#5d3ebc', 
+      },
+      textColor: {
+        'header-color': "rgb(219, 219, 255)"
       }
     },
   },
