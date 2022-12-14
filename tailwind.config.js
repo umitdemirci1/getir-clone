@@ -6,8 +6,10 @@ module.exports = {
       backgroundColor: {
         'brand-color': '#5d3ebc', 
       },
-      textColor: {
-        'header-color': "rgb(219, 219, 255)"
+      colors: {
+        'header-color': "rgb(219, 219, 255)",
+        'slider-gradient-primary-color': "#7849f7",
+        'yellow-button-color': '#ffd300'
       }
     },
   },

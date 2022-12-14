@@ -12,3 +12,14 @@
         @apply antialiased
     }
 }
+
+.flag-select {
+    @apply pb-0
+}
+.flag-select button{
+    @apply h-14 w-28 border-2 border-gray-300 
+}
+
+.flag-select button>span span:nth-child(3) {
+    @apply text-sm pl-0
+}
