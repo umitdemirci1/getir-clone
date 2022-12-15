@@ -1,4 +1,4 @@
-const Category = ({ key, category: { id, title, image } }) => {
+const Category = ({ category: { id, title, image } }) => {
     return (
         <>
             <a href="#" className="text-sm font-semibold flex flex-col items-center text-center">

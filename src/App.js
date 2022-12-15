@@ -13,7 +13,7 @@ function App() {
       <Header></Header>
       <AnimatedFragment></AnimatedFragment>
       <Categories></Categories>
-      <div className="conai">
+      <div className="container mx-auto px-[144px]">
         <Campaigns></Campaigns>
         <Favorites></Favorites>
         <MobileApp></MobileApp>
