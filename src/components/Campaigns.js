@@ -1,7 +1,7 @@
 const Campaigns = () => {
     return ( 
         <>
-            Campaigns!
+            
         </>
      );
 }
