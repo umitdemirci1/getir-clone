@@ -3,6 +3,12 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      spacing: {
+        '0.1': '0.063rem'
+      },
+      backgroundImage: {
+        'mobile-app': 'url(https://cdn.getir.com/getirweb-images/common/illustration/doodle.png)'
+      },
       colors: {
         'brand-color': '#5d3ebc', 
         'header-color': "rgb(219, 219, 255)",
