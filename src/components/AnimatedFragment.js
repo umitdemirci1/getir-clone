@@ -51,6 +51,7 @@ const AnimatedFragment = () => {
                                 />
                                 <label className="flex-1 relative group">
                                     <input required type="text"
+                                    maxLength={10}
                                         className="h-14 p-4 w-full border-2 text-sm
                                         border-gray-300 rounded 
                                          transition-colors group-hover:border-secondary-color
