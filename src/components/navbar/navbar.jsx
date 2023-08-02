@@ -1,7 +1,7 @@
 import { FiGlobe } from 'react-icons/fi'
 import { FaUser, FaUserPlus } from 'react-icons/fa'
 
-const Header = () => {
+const Navbar = () => {
     return (
         <div className="bg-brand-color">
             <div className="container mx-auto flex h-11 items-center justify-between">
@@ -25,4 +25,4 @@ const Header = () => {
     );
 }
 
-export default Header;
+export default Navbar;
