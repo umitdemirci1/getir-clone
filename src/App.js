@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import GlobalLayout from "./layouts/global-layout";
-import Main from "./pages/main/home";
 
 function App() {
   return (
