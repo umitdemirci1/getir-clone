@@ -1,14 +1,14 @@
 import { FiGlobe } from 'react-icons/fi'
 import { FaUser, FaUserPlus } from 'react-icons/fa'
-import navbarItems from '../api/nav-items.json';
+import navbarItems from '../..nav-items.json';
 
 const Navbar = () => {
     return (
         <div className="bg-brand-color">
             <div className="mx-auto flex h-11 items-center justify-between">
                 {
-                    navbarItems.map(() => (
-                        
+                    navbarItems.map((navItem) => (
+                        <p>{navItem.name} </p>
                     ))
                 }
                 <a href="#">
