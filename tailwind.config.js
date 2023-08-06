@@ -15,7 +15,10 @@ module.exports = {
         'secondary-color': "#7849f7",
         'slider-gradient-primary-color': "#7849f7",
         'yellow-button-color': '#ffd300',
-        'category-color': '#191919'
+        'category-color': '#191919',
+        'navbar-color': '#4c3398',
+        'navbar-button-color': 'rgb(219, 219, 255)',
+        'blurColor': 'rgb(105, 116, 136)',
       }
     },
   },
