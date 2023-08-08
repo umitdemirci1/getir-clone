@@ -2,9 +2,25 @@ import { FiGlobe } from "react-icons/fi";
 import { FaUser, FaUserPlus } from "react-icons/fa";
 import navbarItems from "../../api/nav-items.json";
 import { NavLink } from "react-router-dom";
-import NavbarDynamicIcon from "./navbar-dynamic-icon";
+import { useState } from "react";
 
 const Navbar = () => {
+  let initialDynamicIconInArray = navbarItems.filter(
+    (item) => item.name === "getir"
+  );
+  let initialDynamicIconInObject = initialDynamicIconInArray[0];
+  const [navbarDynamicIcon, setNavbarDynamicIcon] = useState(
+    initialDynamicIconInObject
+  );
+
+  const handleSelectActivePage = (activeLink) => {
+    let activeLinkInArray = navbarItems.filter(
+      (page) => page.name === activeLink
+    );
+    let activeLinkInObject = activeLinkInArray[0];
+    setNavbarDynamicIcon(activeLinkInObject);
+  };
+
   return (
     <>
       <div className="xl:flex xl:justify-center bg-navbar-color min-w-[426px]">
@@ -22,6 +38,7 @@ const Navbar = () => {
                       ? "px-[12px] py-[12px] mt-[3px] md:px-[20px] md:mt-0"
                       : "brightness-[0%] invert-[80%] sepia-[72%] saturate-200 hue-rotate-180 contrast-[152%] px-[12px] py-[12px] mt-[3px] md:mt-0 md:px-[20px]"
                   }
+                  onClick={() => handleSelectActivePage(navItem.name)}
                 >
                   <img
                     className="h-[14px] md:h-[16px]"
@@ -49,7 +66,12 @@ const Navbar = () => {
         </div>
       </div>
 
-     <NavbarDynamicIcon />
+      <div className="bg-brand-color h-[64px] flex w-full items-center justify-center text-navbar-button-color md:hidden">
+        <img
+          className="w-full h-[22px] object-contain"
+          src={navbarDynamicIcon.image}
+        />
+      </div>
     </>
   );
 };
