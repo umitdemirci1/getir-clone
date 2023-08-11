@@ -1,6 +1,7 @@
 import getir from "../../api/getir.json";
 import { useState } from "react";
 import NotFoundMan from "../../api/not-found-man";
+import Footer from "../../components/footer";
 
 const NotFound = () => {
   const [navItem, setNavItem] = useState(getir);
@@ -31,6 +32,7 @@ const NotFound = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
